@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box-Model</title>
+        <meta name="description" content="demo-webpade, learn">
+        <style>
+        /* .content-box{
+            margin:40px;
+            width: 300px;
+            border:5px red solid;
+            padding: 40px;
+            height: 150px;
+            box-sizing: content-box;
+            
+        }
+        .alt-box{
+             margin:40px;
+            width: 300px;
+            border:5px red solid;
+            padding: 40px;
+            height: 150px;
+            box-sizing:border-box;
+
+        } */
+/* 
+        h1::first-letter{
+            color: aqua;
+        } */
+        /* h1::before{
+            content: "*";
+            color: gold;
+        }
+        h1::after{
+            content: "-";
+            color: aquamarine;
+        }
+        h1::selection{
+            color: chocolate;
+            background-color: blanchedalmond;
+        } */
+/* 
+ 
+        div{
+            background-image: url(./img/kotlin.png);
+            width: 500px;
+            height: 500px;
+            border: 100px double skyblue;
+            margin: 100px auto ;
+            color:burlywood;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: 50px 50px;
+            background-size:contain;
+            background-attachment: fixed; 
+             padding: 20px 5px;
+            background-origin:content-box;
+
+
+        }  */
+        
+
+        .heading{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 2em;
+            /* align-items: center;
+            text-shadow: 2px 2px 10px blue  ; */
+            text-align: center;
+            /* text-shadow: 0 0 3px #ff0000, 0 0 5px #00ff00; */
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 50px blue, 0 0 5px darkblue;
+        }
+        div.card{
+            width: 400px;
+            margin: 100px auto;
+            background-color:rgb(255, 255, 255);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 5px 5px 50px burlywood;
+        }
+
+        .card :hover{
+            box-shadow: 2px 2px 5px blue, 0 0 10px yellowgreen, 2px 2px 40px red;
+        }
+
+        .card img{
+            /* width: auto;
+            height: auto; */
+
+            width: 100%;
+            height: 100%;
+        }
+
+        /* .trans{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+             transition: width 1s linear;
+           
+            
+
+        } */
+        /* .trans:hover{
+            width: 140px;
+           background-color: orange;
+           
+        } */
+
+        .box1{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            text-align:center;
+            font-size: 50px;
+            padding-top: 35px;
+            box-sizing: border-box;
+            transition: transform 1s;
+            margin: 10px auto;
+
+          
+        }
+        .box1:hover{
+              transform: translate(250px, 250px);
+            
+        }
+ 
+
+
+        
+    </style>
+    </head>
+    <body>
+        <!-- <div class="content-box"> Hi I am content box of CSS</div>
+        <div class="alt-box">Hi I am Alternate box of CSS</div> -->
+
+        <!-- Pseudo Element -->
+        <!-- 
+        <h1>Hi Shubham1!</h1> -->
+
+        <h1 class="heading">Hi! Coders</h1>
+
+        <div class="card">
+            <img src="./img/kotlin.png" alt="kotlin iamge">
+            <h2>Hi Kotlin</h2>
+        </div>
+
+        <!-- ransition effect --->
+        <div class="trans"></div>
+
+        <!----------- Transform ------------------->
+
+        <div class="box1">Hello</div>
+
+
+        
+
+    </body>
+</html>

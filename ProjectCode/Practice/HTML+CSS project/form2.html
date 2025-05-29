@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice</title>
+    </head>
+    <body>
+        <h2>Job Registration</h2>
+
+        <form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="info">
+            <br />
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="email" name="info" id="email">
+            <br />
+            <br />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" class="info">
+
+            <br />
+            <br />
+            <label for="resume">Resume:</label>
+            <input type="file" name="info" id="resume">
+
+            <br />
+            <br />
+
+            <label for="exp">Experience(years):</label>
+            <input type="number" name="info" id="exp" min="0" max="50">
+
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" name="interest" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="interest" id="CSS">
+                <label for="html">CSS</label>
+
+                <input type="checkbox" name="interest" id="js">
+                <label for="js">JavaScript</label>
+
+            </fieldset>
+
+            <br />
+            <br />
+
+            <label for>Highest Education:</label>
+
+            <select name="info" id="hschool">
+
+                <option value="highSchool">High School</option>
+                <option value="Inter">Intermediate School</option>
+                <option value="Bachelor">Bachleors</option>
+                <option value="Master">Master</option>
+                <option value="phd">PhD</option>
+            </select>
+            <br />
+            <br />
+
+            <p>Availability:</p>
+            <label for="fullTime">Full-Time</label>
+            <input type="radio" name="avail" id="fullTime">
+            <br />
+
+            <label for="partTime">Part-time</label>
+            <input type="radio" name="avail" id="partTime">
+            <br />
+<br/>
+            <label for="comment">Comments:</label>
+            <br />
+            <br />
+            <textarea name="textarea" id="comment" cols="30"
+                rows="20"></textarea>
+            <input type="button" value="Register">
+        </form>
+
+    </body>
+</html>
