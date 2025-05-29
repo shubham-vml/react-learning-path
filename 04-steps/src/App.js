@@ -7,16 +7,25 @@ const messages = [
 ];
 
 export default function App() {
+  return (
+    <div>
+      <Step />
+      <Step />
+    </div>
+  );
+}
+
+function Step() {
   /*Step 1: Create a state variable*/
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
   function handlePrevious() {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) setStep((currentStep) => currentStep - 1);
   }
 
   function handleNext() {
-    if (step < 3) setStep(step + 1);
+    if (step < 3) setStep((currentStep) => currentStep + 1);
   }
 
   function handleMain() {
@@ -26,8 +35,8 @@ export default function App() {
   }
   // const step = 1;
   return (
-    <>
-      <button className="close" onClick={() => setIsOpen(!isOpen)}>
+    <div>
+      <button className="close" onClick={() => setIsOpen((is) => !is)}>
         &times;
       </button>
       {isOpen && (
@@ -64,6 +73,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
